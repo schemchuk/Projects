@@ -1,71 +1,135 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* padding не добавляется к размеру элемента, а берется изнутри */
+    box-sizing: border-box;
 }
-section {
-    background-color: #EEEFF1;
-    padding: 100px 0; /* 100px - сверху и снизу, 0 - справа и слева */
+html {
+    font-family: 'Inter', sans-serif;
 }
-h1 {
-    font-size: 32px;
-    text-align: center;
+a {
+    text-decoration: none; /* отменяем нижнее подчеркивание у ссылок */
 }
-p {
-    width: 30%;
-    color: #727272;
-    text-align: center;
-    margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
+header {
+    background-color: #1ABC9C;
+    padding: 15px 0; /* отступы сверху/снизу */
 }
-form {
-    width: 30%;
-    display: flex;
-    flex-direction: column; /* разместить элементы в колонку */
+.wrapper {
+    width: 90%;
     margin: auto;
-}
-.form-control {
     display: flex;
     justify-content: space-between;
-    /* gap: 30px; */
+    align-items: center;
 }
-.form-control input {
-    width: calc(50% - 15px); 
-    padding: 20px;
-    border: none; /* сброс границы */
-    outline: none; /* сброс границы инпута, который появляется при нажатии на него (фокус) */
-    caret-color: #34547A; /* цвет курсора в input */
+.nav-list {
+    list-style: none; /* сброс маркера у элементов списка */
+    display: flex;
 }
-.form-control input:focus, textarea:focus {
-    border: 1px solid #34547A;
+li:not(:last-child) {
+    margin-right: 20px;
 }
-textarea {
-    padding: 20px;
-    border: none;
-    outline: none;
-    margin: 20px 0 50px; /* 20px - сверху, 0 - справа/слева, 50px - снизу */
-    resize: none;  /* убираем стрелку увеличения textarea */
+.nav-link {
+    font-size: 25px;
+    color: black;
 }
-input[type="submit"] {
+.social-link:not(:last-child) {
+    margin-right: 20px;
+}
+/* about */
+.about {
+    display: flex;
+    align-items: center;
+}
+.about-img {
     width: 50%;
-    margin: auto;
-    padding: 20px 0; /* 20px - сверху/снизу, 0 - справа/слева */
-    border: none;
-    outline: none;
-    background-color: #34547A;
-    color: white;
-    text-transform: uppercase; /* текст в верхнем регистре */
-    letter-spacing: 2.1px; /* расстояние между буквами */
 }
-/*
-    Псевдокласс :focus - это особое состояние input, textarea, в момент ввода в input текста
+.about-info {
+    width: 50%;
+}
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.about-descr {
+    padding: 0 65px;
+    font-size: 20px;
+    text-align: justify;
+}
+/* наши проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0; /* 125px - сверху/снизу, 0 - справа/слева */
+}
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
+.projects-list {
+    display: flex;
+    gap: 40px; /* отступы между элементами */
+}
+.project {
+    width: 33%; /* calc(33% - 80 / 3) */
+    aspect-ratio: 436/376; /* соотношение сторон */
+    background-image: url(./images/project.png);
+}
+/* 
+    .project:not(:last-child) {
+        margin-right: 40px;
+    }
 
-    Селекторы:
-        1. по тегу - h1 {}, p {}, section {}
-        2. по классу - .className, .item, .item-1, .form-control
-        3. по аттрибуту тега - input[AttrName="AttrValue"]. 
 
-    flex-direction - меняет направление flex элементов.
-        по умолчанию row - все элементы в одну строку
-        column - элементы выстраиваются в колонку, при этом justify-content и align-items
-            меняются. 
+    gap - отступы между элементами внутри flexbox
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+
+
+/* 
+
+
+    text-align: justify - выравнивание по ширине
+
+    header li:not(:last-child), header a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    Задача. добавить отступы между картинками социальных иконок
+
+    h1
+    font-size 32-36px;
+    font-weight: 600;
+
+    p, a, div
+    font-size: 16px
+    font-weight: 400
+    font-style: normal
+    line-height: normal    
+
+
+    :first-child - первый дочерний элемент
+    :last-child - последний дочерний элемент
+
+    :not() - отрицание, инверсия
+
+    Задача. Позиционировать блоки в header в одну строку равноудаленно друг от друга
+
+    list-style: 
+        a) list-style-type - тип маркера
+        б) list-style-pos - 
+        в) list-style-image -
+
+        background: red;
+
+        background:
+         a) background-image
+         б) background-size
+         в) background-position
+         г) background-repeat
+         д) background-color
+
+         background:  url("./img1.jpg") cover center no-repeat;
 */
