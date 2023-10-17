@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+text-decoration: none;
+}
+header {
+    background-color: aquamarine;
+    padding: 15px 0;
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+.nav-link {
+    font-size: 25px;
+    color: black;
+}
+.sosial-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+
