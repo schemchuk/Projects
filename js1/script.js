@@ -36,4 +36,20 @@
 
 // console.log(`Вам ${2023 - age} лет`)
 
+const number = +prompt("Enter your number")
 
+// if (number > 0) {
+//     console.log("You enter a positiv number")
+// } else if (number < 0) {
+//     console.log("You enter a negativ number")
+// } else {
+//     console.log("You enter a null")
+// }
+const sum = 500
+if (sum > 1500) {
+    console.log(`Ваша скидка 10%`)
+} else if (sum > 1000) {
+    console.log(`Ваша скидка 15%`)
+}else {
+    console.log(`Ваша скидка 0`)
+}
