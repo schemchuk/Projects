@@ -26,5 +26,48 @@
 // for(i = 0; i < names.length; i++)
 // console.log(names[i])
 
-for(i = 0; i < 5; i++)
- console.log(i)
+// for(i = 0; i < 5; i++)
+//  console.loonst names =
+// const names = ["Арсен", "Vkf" ,"ghkjk","Arsen", "Vlad", "Olga", "Irina"]
+// const numbers = [-100, 0, 50, -20, 0, 15, 25, -40];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > 0) {
+//     console.log(numbers[i]);
+//   }
+// }
+// const numbers = [10, 11, 23, 56, 79]
+// for (let i =0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 != 0)
+//     console.log(numbers[i])
+// }
+
+// const numbers = [10, 11, 23, 56, 79];
+// let sum = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 == 0) {
+//     sum = sum + numbers[i];
+//   }
+// }
+
+// console.log(`End `);
+// const numbers = [10, 11, 23, 56, 79];
+// let sum = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 == 0) {
+//     sum = sum + numbers[i];
+//   }
+// }
+
+const numbers = [10, 11, 23, 56, 79];
+let sum1 = 0;
+let sum2 = 0
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 != 0) {
+    sum1 = sum1+ numbers[i];
+  } else { 
+    sum2 = sum2 + numbers[1]
+  }
+}
+
+console.log(`Result ${sum1 - sum2}`);
+
