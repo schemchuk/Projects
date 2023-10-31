@@ -134,7 +134,7 @@ img.setAttribute("src", "../project3/images/img2.jpg") // меняю атриб�
     }
 */
 
-sum(10, 15)
-function sum(a, b) {
-    console.log(a + b)
-}
+// sum(10, 15)
+// function sum(a, b) {
+//     console.log(a + b)
+// }
