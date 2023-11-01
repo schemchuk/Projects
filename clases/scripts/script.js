@@ -14,7 +14,28 @@ const todoCards = document.querySelectorAll(".todo-item") // Нахожу все
 todoCards.forEach(function(todoCard) {
     todoCard.addEventListener("click", function(event) {
         // event.target.classList.add("active")
-        todoCard.classList.add("active") // 
+        todoCard.classList.toggle("active") // 
     })
 })
+// const allBtn= document.querySelectorAll(".all-btn") 
+// todoCards.forEach(button) {
+//     todoCard.addEventListener("click", function(event) {
+//         // event.target.classList.add("active")
+//         todoCard.classList.toggle("active") // 
+//     })
 
+// }
+
+const allBtn = document.querySelector(".all-btn");
+allBtn.addEventListener("click", function () {
+  todoCards.forEach(function (todoCard) {
+    todoCard.classList.add("active");
+  });
+});
+
+ const allReset = document.querySelector(".all-reset");
+ allReset.addEventListener("click", function () {
+   todoCards.forEach(function (todoCard) {
+     todoCard.classList.remove("active");
+   });
+ });

@@ -1,0 +1,11 @@
+.item-1 {
+background-color: aqua;
+width: 350px1;
+padding: 50px;
+}
+p{
+    font-size: 24px;
+}
+.hidden {
+    display: none;
+}
